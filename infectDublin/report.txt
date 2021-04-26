@@ -1,0 +1,6 @@
+---infectDublin network metrics---
+avg Clustering: 0.456
+avg Distance: 3.631
+density: 0.033
+diameter: 9
+assortativity: 0.226

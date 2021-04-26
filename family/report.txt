@@ -1,0 +1,6 @@
+---family network metrics---
+avg Clustering: 0.603
+avg Distance: 2.327
+density: 0.291
+diameter: 4
+assortativity: -0.013

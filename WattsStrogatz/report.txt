@@ -1,0 +1,10 @@
+---WS model metrics---
+number of nodes: 11
+number of each node's neighbors in the ring topology: 4
+probability of rewiring each edge: 0.9
+
+avg Clustering: 0.276
+avg Distance: 1.691
+density: 0.400
+diameter: 3
+assortativity: -0.072

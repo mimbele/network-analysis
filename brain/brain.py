@@ -3,11 +3,11 @@ import csv
 import os
 import matplotlib.pylab as plt
 
-#store edges with the right format for networkx to read
-brain_edges = open("brain_edges.txt", "a")
-for row in csv.reader(open('./brain_edges_verbose.csv', 'r')):
-    brain_edges.write(row[0] + ',' + row[1] + '\n')
-brain_edges.close()
+# #store edges with the right format for networkx to read
+# brain_edges = open("brain_edges.txt", "a")
+# for row in csv.reader(open('./brain_edges_verbose.csv', 'r')):
+#     brain_edges.write(row[0] + ',' + row[1] + '\n')
+# brain_edges.close()
 
 #read edges
 filename = (os.path.join('/home/mimbele/PycharmProjects/pythonProject/brain/brain_edges.txt'))
@@ -132,3 +132,20 @@ plt.title('PageRank (sorted)')
 figPath = (os.path.join('/home/mimbele/PycharmProjects/pythonProject/brain/brain_pagerank.jpg'))
 plt.savefig(figPath)
 plt.close()
+
+
+avgClustering = nx.average_clustering(graph)
+density = nx.density(graph)
+diameter = nx.diameter(graph)
+avgDistance = nx.average_shortest_path_length(graph)
+assortativity = nx.degree_assortativity_coefficient(graph)
+
+report = f"""---brain network metrics---
+avg Clustering: {avgClustering:3.3f}
+avg Distance: {avgDistance:3.3f}
+density: {density:3.3f}
+diameter: {diameter}
+assortativity: {assortativity:3.3f}"""
+f = open("report.txt", "w")
+f.write(report)
+f.close()

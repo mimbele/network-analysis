@@ -160,3 +160,20 @@ plt.title('PageRank (sorted)')
 figPath = (os.path.join('/home/mimbele/PycharmProjects/pythonProject/family/family_pagerank.jpg'))
 plt.savefig(figPath)
 plt.close()
+
+
+avgClustering = nx.average_clustering(graph)
+density = nx.density(graph)
+diameter = nx.diameter(graph)
+avgDistance = nx.average_shortest_path_length(graph)
+assortativity = nx.degree_assortativity_coefficient(graph)
+
+report = f"""---family network metrics---
+avg Clustering: {avgClustering:3.3f}
+avg Distance: {avgDistance:3.3f}
+density: {density:3.3f}
+diameter: {diameter}
+assortativity: {assortativity:3.3f}"""
+f = open("report.txt", "w")
+f.write(report)
+f.close()

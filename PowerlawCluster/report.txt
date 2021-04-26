@@ -1,0 +1,10 @@
+---PC model metrics---
+number of nodes: 410
+number of new edges each step: 3
+Probability of adding a triangle after adding a random edge: 0.5
+
+avg Clustering: 0.287
+avg Distance: 3.176
+density: 0.015
+diameter: 6
+assortativity: -0.096

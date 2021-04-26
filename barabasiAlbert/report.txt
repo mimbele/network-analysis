@@ -1,0 +1,9 @@
+---BA model metrics---
+number of nodes: 410
+number of new edges each step: 3
+
+avg Clustering: 0.069
+avg Distance: 3.138
+density: 0.015
+diameter: 5
+assortativity: -0.121

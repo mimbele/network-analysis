@@ -1,0 +1,10 @@
+---FF model metrics---
+number of nodes: 1015
+forward burn probability: 0.44
+backward burn probability: 0.33
+
+avg Clustering: 0.630
+avg Distance: 2.764
+density: 0.039
+diameter: 10
+assortativity: -0.290
